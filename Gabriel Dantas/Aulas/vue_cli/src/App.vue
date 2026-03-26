@@ -5,17 +5,35 @@
 <Home-Component />
 <hr/>
 <Home-Component />
+<UsuarioComponent />
+<br>
+<UsuarioComponent />
   </div>
 </template>
 
 <script>
 
 import HomeComponent from "./components/HomeComponent.vue";
+import UsuarioComponent from "./components/UsuarioComponent.vue";
+
 
 export default {
   name: "App",
   components: {
     HomeComponent,
+    UsuarioComponent,
+  },
+  created() {
+    console.log("created");
+  },
+  mounted() {
+    console.log("mounted");
+  },
+  updated() {
+    console.log("updated");
+  },
+  errorCaptured() {
+    console.log("errorCaptured");
   },
 };
 </script>
