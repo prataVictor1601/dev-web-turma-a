@@ -6,9 +6,15 @@
     <br />
     <home-component />
     <br />
-    <usuario-component />
-    <br/>
-    <estilo-component/>
+    <usuario-component v-show="isUsuarioVisivel" />
+    <br />
+    <estilo-component />
+    <br />
+    <imagem-component
+      @visibilidade-img="escutarVisibilidadeImg"
+      larguraImg="300"
+      urlImg="https://i0.statig.com.br/bancodeimagens/2c/na/9i/2cna9ia94r2cseq9t93j52dgt.jpg"
+    />
   </div>
 </template>
 
@@ -16,6 +22,7 @@
 import HomeComponent from "./components/HomeComponent.vue";
 import UsuarioComponent from "./components/UsuarioComponent.vue";
 import EstiloComponent from "./components/EstiloComponent.vue";
+import ImagemComponent from "./components/ImagemComponent.vue";
 
 export default {
   name: "App",
@@ -23,20 +30,30 @@ export default {
     HomeComponent,
     UsuarioComponent,
     EstiloComponent,
+    ImagemComponent,
   },
-  created(){
-    console.log("created");
+  data() {
+    return {
+      isUsuarioVisivel: false,
+    };
   },
-  mounted(){
+  methods: {
+    escutarVisibilidadeImg(isImgComponentVisivel) {
+      this.isUsuarioVisivel = !isImgComponentVisivel;
+    },
+  },
+  mounted() {
     console.log("mounted");
   },
-  updated(){
+  created() {
+    console.log("created");
+  },
+  updated() {
     console.log("updated");
   },
-  errorCaptured(){
+  errorCaptured() {
     console.log("errorCaptured");
   },
-
 };
 </script>
 
@@ -50,14 +67,13 @@ export default {
   margin-top: 60px;
 }
 
-/*h1{
+/* h1 {
   color: darkmagenta;
   text-align: center;
 }
-
-.subtitulo{
+.subtitulo {
   color: darkseagreen;
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   text-align: center;
-}*/
+} */
 </style>
