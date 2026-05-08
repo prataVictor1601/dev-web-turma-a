@@ -9,7 +9,6 @@
     <router-link to="/pedidos">Pedidos</router-link> |
   </nav>
 </div>
-  <router-view/>
 </template>
 
 <script>
