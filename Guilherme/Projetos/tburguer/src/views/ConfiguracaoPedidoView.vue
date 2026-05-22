@@ -22,7 +22,7 @@ import PedidoComponent from '@/components/PedidoComponent.vue';
                 const decodeBurguer = JSON.parse(decodeURIComponent(query.burguer));
                 this.hamburguerSelecionado = decodeBurguer;
             }
-        }
+        },
     };
 </script>
 <style scoped></style>
