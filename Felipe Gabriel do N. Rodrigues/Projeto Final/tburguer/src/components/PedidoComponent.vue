@@ -16,7 +16,7 @@
                 <label>Ponto da carne</label>
                 <select name="ponto-carne" id="ponto-carne" v-model="pontoCarneSelecionado">
                     <option value="" selected>Selecione o ponto</option>
-                    <option v-for="pontoCarne in listaPontoCarne" :key="pontoCarne.id" value="pontoCarne">
+                    <option v-for="pontoCarne in listaPontoCarne" :key="pontoCarne.id" :value="pontoCarne">
                         {{ pontoCarne.descricao }}
                     </option>
                 </select>
