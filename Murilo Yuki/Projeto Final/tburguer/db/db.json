@@ -11,6 +11,10 @@
     {
       "id": 3,
       "descricao": "Mal passada"
+    },
+    {
+      "id": 4,
+      "descricao": "Boi morreu a toa!"
     }
   ],
   "status_pedido": [
@@ -41,10 +45,10 @@
   ],
   "pedidos": [
     {
-      "nome": "Fernando",
+      "nome": "Fenrando Dias",
       "ponto": {
-        "id": 1,
-        "descricao": "Ao ponto"
+        "id": 4,
+        "descricao": "Boi morreu a toa!"
       },
       "bebidas": [
         {
@@ -56,7 +60,7 @@
           "eh_novidade": false
         }
       ],
-      "complementos": [
+      "complemento": [
         {
           "id": 1,
           "nome": "Combo Bebida + Batata",
@@ -66,8 +70,7 @@
           "eh_novidade": true
         }
       ],
-      "statusId": 6,
-      "hamburguer": {
+      "burguer": {
         "id": 1,
         "nome": "Diretoria Alterado",
         "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696429768651d76c8124dc_75_75.jpeg",
@@ -75,7 +78,8 @@
         "valor": 35,
         "eh_novidade": true
       },
-      "id": 2
+      "statusId": "4",
+      "id": 1
     }
   ],
   "opcionais": {
@@ -200,7 +204,6 @@
         "valor": 15,
         "eh_novidade": true
       }
-          
     ]
   }
 }

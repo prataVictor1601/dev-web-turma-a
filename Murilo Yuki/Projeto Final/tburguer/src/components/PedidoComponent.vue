@@ -120,13 +120,13 @@ export default {
       };
 
       console.log(dadosPedido);
-    
-      const dadosJson = JSON.stringify(dadosPedido)    
-      const req = await fetch("http://localhost:3000/pedidos", {
-        method:"POST",
-        headers: {"Content-Type": "apllication/json" },
-        body:dadosPedido
 
+      const dadosJson = JSON.stringify(dadosPedido);
+
+      const req = await fetch("http://localhost:3000/pedidos", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: dadosJson,
       });
     },
   },
@@ -236,5 +236,3 @@ select {
   color: #222;
 }
 </style>
-
-
