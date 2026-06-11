@@ -58,7 +58,7 @@
  
 <script>
  
-const API_KEY = 'd31b64836034ee4a236746de3dc2f640';
+const API_KEY = '62393d9516fee54c7b90756b77b63468';
  
 export default {
   name: 'CopaAlbum',
