@@ -162,6 +162,7 @@ export default {
       erros: { nome: "", tamanho: "" },
       alerta: { tipo: "info", mensagem: "", duracao: 4000 },
       enviando: false,
+      avisoOpcionaisExibido: false,
     };
   },
   computed: {
@@ -202,6 +203,22 @@ export default {
     async criarPedido(e) {
       e.preventDefault();
       if (!this.validar()) return;
+
+      // Aviso (laranja): pedido sem nenhum opcional selecionado.
+      // Não bloqueia o fluxo, apenas avisa antes de enviar.
+      const semOpcionais =
+        this.listaAcompanhamentosSelecionados.length === 0 &&
+        this.listaBebidasSelecionadas.length === 0;
+
+      if (semOpcionais && !this.avisoOpcionaisExibido) {
+        this.avisoOpcionaisExibido = true;
+        this.exibirAlerta(
+          "alerta",
+          "Seu pedido está sem acompanhamentos ou bebidas. Clique novamente em Confirmar para enviar assim mesmo."
+        );
+        return;
+      }
+
       this.enviando = true;
       const dadosPedido = {
         nome: this.nomeCliente,

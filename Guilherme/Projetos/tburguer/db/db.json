@@ -43,36 +43,7 @@
       "descricao": "Pedido realizado"
     }
   ],
-  "pedidos": [
-    {
-      "nome": "Gui",
-      "tamanho": {
-        "id": 4,
-        "descricao": "Família (500ml)"
-      },
-      "bebidas": [
-        {
-          "id": 4,
-          "nome": "Chá Gelado Pêssego",
-          "descricao": "Chá de pêssego artesanal servido gelado.",
-          "foto": "https://images.unsplash.com/photo-1499638673689-79a0b5115d87?w=75&h=75&fit=crop",
-          "valor": 10,
-          "eh_novidade": false
-        }
-      ],
-      "acompanhamentos": [],
-      "cafe": {
-        "id": 1,
-        "nome": "Espresso Clássico",
-        "foto": "https://images.pexels.com/photos/34144287/pexels-photo-34144287.jpeg",
-        "descricao": "Grão 100% arábica, torra média, extração precisa. Puro e sem floreios.",
-        "valor": 8,
-        "eh_novidade": false
-      },
-      "statusId": 6,
-      "id": 1
-    }
-  ],
+  "pedidos": [],
   "opcionais": {
     "acompanhamentos": [
       {
