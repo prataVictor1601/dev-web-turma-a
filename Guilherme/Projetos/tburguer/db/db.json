@@ -181,6 +181,14 @@
         "descricao": "Espresso curto manchado com uma colherada de espuma de leite. Intenso e direto.",
         "valor": 10,
         "eh_novidade": false
+      },
+      {
+        "id": 8,
+        "nome": "Cappuccino da Resenha ✌️",
+        "foto": "https://images.pexels.com/photos/32158137/pexels-photo-32158137/free-photo-of-delicious-cappuccino-with-frothy-cinnamon-top.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "descricao": "Cappuccino cremoso com canela e chocolate, perfeito para acompanhar uma boa resenha entre amigos.",
+        "valor": 18.9,
+        "eh_novidade": true
       }
     ]
   }
