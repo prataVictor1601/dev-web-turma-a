@@ -1,7 +1,7 @@
 <template>
   <div id="main-banner">
     <img id="banner-img" src="/img/banner.svg" alt="banner" />
-    <h1>O café que <br>você gosta do starbucks</h1>
+    <h1>O café que <br>você gosta do starbucks </h1>
   </div>
 </template>
 <script>
