@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas</title>
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: "GILL Sans", sans-serif;
+            blackground-color: #cdcdcd;
+            padding: 16px;
+            margin: 20px;
+        }
+        h1 {
+            color: rgb (2, 93, 96 );
+            text-align: center;
+        }
+        .input-area {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #taskInput {
+            padding: 9px;
+            width: 230px;
+            font-size: 16px;
+        }
+        #button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-left: 5px;
+            color: white;
+            background-color: gold;
+            border: olive 0px  solid;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        #button:hover {
+            color: gold;
+            background-color: rgb(250, 250, 250);
+            transition: 0.5s;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #f4f4f4;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }   
+        </style>
+     </head>
+
+
+   <body>
+
+    <h1>Minha lista de tarefas</h1>
+    <div class="input-area">
+        <input type="text" id="taskInput" placeholder="Digite sua nova tarefa!">
+        <button onclick="addTask()">Adicionar</button>
+    </div>
+
+
+    <ul id="taskList">
+        <li>Estudar</li>
+        <li>Exemplo de tarefa 2</li>
+    
+    </ul>
+</body>
+</html>
