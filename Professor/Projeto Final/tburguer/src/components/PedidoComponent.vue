@@ -7,8 +7,7 @@
         </p>
         <img
           id="foto-content"
-          :src="burguer && burguer.foto ? burguer.foto : ''"
-        />
+          :src="burguer && burguer.foto ? burguer.foto : ''">
       </div>
       <div class="inputs">
         <label for="nome-cliente">Nome</label>
