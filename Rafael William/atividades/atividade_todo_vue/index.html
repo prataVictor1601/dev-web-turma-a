@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas - Vue 3</title>
+    <!-- Importando Vue 3 via CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        body {
+            font-family: "Gill Sans", sans-serif;
+            background: #cdcdcd;
+            padding: 16px;
+        }
+        h1 {
+            color: rgb(2, 93, 96);
+            text-align: center;
+        }
+        .input-area {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            padding: 8px;
+            width: 160px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        button.btn-adicionar {
+            padding: 8px 12px;
+            margin-left: 5px;
+            color: white;
+            background-color: brown;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button.btn-adicionar:hover {
+            background-color: #a52a2a;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        li {
+            background: white;
+            margin-bottom: 8px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        li.concluida span {
+            text-decoration: line-through;
+            color: gray;
+        }
+        .fechar {
+            background: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h1>Minha Lista de Tarefas (Vue 3)</h1>
+        
+        <div class="input-area">
+            <!-- Uso do v-model para ligação bidirecional -->
+            <input 
+                type="text" 
+                v-model="novaTarefa" 
+                @keyup.enter="adicionarTarefa"
+                placeholder="Nova tarefa..."
+            >
+            <!-- Uso do @click para evento de clique -->
+            <button class="btn-adicionar" @click="adicionarTarefa">Adicionar</button>
+        </div>
+
+        <ul>
+            <!-- Uso obrigatório do v-for para listar tarefas -->
+            <li 
+                v-for="(tarefa, index) in tarefas" 
+                :key="index"
+                :class="{ concluida: tarefa.concluida }"
+                @click="alternarConcluida(index)"
+            >
+                <span>{{ tarefa.texto }}</span>
+                <!-- Botão para remover tarefa -->
+                <button class="fechar" @click.stop="removerTarefa(index)">x</button>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        const { createApp, ref } = Vue;
+
+        createApp({
+            setup() {
+                // Estado reativo
+                const novaTarefa = ref('');
+                const tarefas = ref([]);
+
+                // Método para adicionar tarefa
+                const adicionarTarefa = () => {
+                    if (novaTarefa.value.trim() !== '') {
+                        tarefas.value.push({
+                            texto: novaTarefa.value.trim(),
+                            concluida: false
+                        });
+                        novaTarefa.value = ''; // Limpa o input
+                    }
+                };
+
+                // Método para alternar status de concluída
+                const alternarConcluida = (index) => {
+                    tarefas.value[index].concluida = !tarefas.value[index].concluida;
+                };
+
+                // Método para remover tarefa
+                const removerTarefa = (index) => {
+                    tarefas.value.splice(index, 1);
+                };
+
+                return {
+                    novaTarefa,
+                    tarefas,
+                    adicionarTarefa,
+                    alternarConcluida,
+                    removerTarefa
+                };
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>
