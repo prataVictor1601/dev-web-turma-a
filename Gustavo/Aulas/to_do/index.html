@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas</title>
+    <script src="script.js"></script>
+    <style>
+        body{
+            font-family: "Gill Sans";
+            background-color: lightcyan;
+            padding: 15px;
+        }
+        h1{
+        color:black ;
+        text-align: center;
+        }
+        .input-area{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #tarefaInput{
+            padding: 8px;
+            width: 160px;
+            border-radius: 8px;
+          
+        ;
+        }
+        #btnAdicionar{
+            padding: 8px;
+            margin-left: 160px;
+            color: azure;
+            background-color: black;
+            border: red 0px solid;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        #btnAdicionar:hover{
+            color: blue;
+            background-color: red;
+            transition: 0.5ms;
+        }
+        ul{
+            padding: 0px;
+            margin-top: 28px;
+
+        }
+        li{
+            background-color: #fff;
+            margin: 8px 0;
+            padding:10px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Tarefas</h1>
+    <div class="input-area">
+        <input type="text" id="tarefaInput" placeholder="Digite sua tafera!">
+        <button id="btnAdicionar">+</button>
+    </div>
+
+    <ul id="ListaTarefa">
+        <li>Estudar</li>
+    </ul>
+</body>
+</html>
