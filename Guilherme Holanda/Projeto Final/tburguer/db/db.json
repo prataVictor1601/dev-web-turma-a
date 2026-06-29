@@ -1,0 +1,185 @@
+{
+  "menu_bebidas_quentes": [
+    {
+      "id": 1,
+      "nome": "Espresso",
+      "foto": "https://images.unsplash.com/photo-1579992357154-faf4bde95b3d?q=80&w=987&auto=format&fit=crop",
+      "descricao": "Café puro e intenso, extraído na hora.",
+      "valor": 7,
+      "eh_novidade": false
+    },
+    {
+      "id": 2,
+      "nome": "Cappuccino",
+      "foto": "https://images.unsplash.com/photo-1506372023823-741c83b836fe?q=80&w=1470&auto=format&fit=crop",
+      "descricao": "Espresso, leite vaporizado e espuma cremosa.",
+      "valor": 12,
+      "eh_novidade": false
+    },
+    {
+      "id": 3,
+      "nome": "Latte",
+      "foto": "https://images.unsplash.com/photo-1534687941688-651ccaafbff8?q=80&w=987&auto=format&fit=crop",
+      "descricao": "Café suave com bastante leite e textura aveludada.",
+      "valor": 13,
+      "eh_novidade": false
+    },
+    {
+      "id": 4,
+      "nome": "Mocha",
+      "foto": "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=987&auto=format&fit=crop",
+      "descricao": "Espresso, chocolate e leite, para os amantes de doce.",
+      "valor": 15,
+      "eh_novidade": true
+    },
+    {
+      "id": 5,
+      "nome": "Macchiato",
+      "foto": "https://images.unsplash.com/photo-1670217756837-34134e2e9e60?q=80&w=987&auto=format&fit=crop",
+      "descricao": "Espresso marcado com um toque de espuma de leite.",
+      "valor": 9,
+      "eh_novidade": false
+    },
+    {
+      "id": 6,
+      "nome": "Chocolate Quente",
+      "foto": "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?q=80&w=987&auto=format&fit=crop",
+      "descricao": "Chocolate cremoso e encorpado, feito na casa.",
+      "valor": 14,
+      "eh_novidade": true
+    }
+  ],
+  "menu_sobremesas": [
+    {
+      "id": 1,
+      "nome": "Croissant",
+      "foto": "https://images.unsplash.com/photo-1612366747681-e4ca6992b1e9?q=80&w=1104&auto=format&fit=crop",
+      "descricao": "Folhado amanteigado, assado fresco diariamente.",
+      "valor": 9,
+      "eh_novidade": false
+    },
+    {
+      "id": 2,
+      "nome": "Bolo de Cenoura",
+      "foto": "https://images.unsplash.com/photo-1650937254058-d952a67a4f46?q=80&w=927&auto=format&fit=crop",
+      "descricao": "Fatia caseira com cobertura de chocolate.",
+      "valor": 11,
+      "eh_novidade": true
+    },
+    {
+      "id": 3,
+      "nome": "Pão de Queijo",
+      "foto": "https://images.unsplash.com/photo-1559141680-d0bd7bc5af84?q=80&w=1064&auto=format&fit=crop",
+      "descricao": "Quentinho e macio por dentro.",
+      "valor": 5,
+      "eh_novidade": false
+    },
+    {
+      "id": 4,
+      "nome": "Pamonha",
+      "foto": "https://images.unsplash.com/photo-1732118070605-8c5faa62d284?q=80&w=987&auto=format&fit=crop",
+      "descricao": "Cremosa e adocicada.",
+      "valor": 10,
+      "eh_novidade": false
+    }
+  ],
+  "menu_bebidas_geladas": [
+    {
+      "id": 1,
+      "nome": "Suco de Laranja",
+      "foto": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?q=80&w=987&auto=format&fit=crop",
+      "descricao": "Natural, feito pela casa.",
+      "valor": 9,
+      "eh_novidade": false
+    },
+    {
+      "id": 2,
+      "nome": "Suco de Maracujá",
+      "foto": "https://images.unsplash.com/photo-1759324355342-f36ca783815d?q=80&w=987&auto=format&fit=crop",
+      "descricao": "Natural, feito pela casa.",
+      "valor": 9,
+      "eh_novidade": false
+    }
+  ],
+  "tamanhos": [
+    {
+      "id": 1,
+      "descricao": "Pequeno"
+    },
+    {
+      "id": 2,
+      "descricao": "Grande"
+    }
+  ],
+  "adicionais": [
+    {
+      "id": 1,
+      "nome": "Chantilly"
+    },
+    {
+      "id": 2,
+      "nome": "Canela"
+    },
+    {
+      "id": 3,
+      "nome": "Chocolate em pó"
+    },
+    {
+      "id": 4,
+      "nome": "Caramelo"
+    },
+    {
+      "id": 5,
+      "nome": "Baunilha"
+    },
+    {
+      "id": 6,
+      "nome": "Doce de Leite"
+    },
+    {
+      "id": 7,
+      "nome": "Marshmallows"
+    }
+  ],
+  "acompanhamentos": [
+    {
+      "id": 1,
+      "nome": "Pão de Queijo"
+    },
+    {
+      "id": 2,
+      "nome": "Croissant"
+    },
+    {
+      "id": 3,
+      "nome": "Pamonha"
+    }
+  ],
+  "status_pedido": [
+    {
+      "id": 1,
+      "descricao": "Pedido em espera"
+    },
+    {
+      "id": 2,
+      "descricao": "Em preparo"
+    },
+    {
+      "id": 3,
+      "descricao": "Pronto para retirada"
+    },
+    {
+      "id": 4,
+      "descricao": "Entregue"
+    },
+    {
+      "id": 5,
+      "descricao": "Pedido pendente"
+    },
+    {
+      "id": 6,
+      "descricao": "Pedido realizado"
+    }
+  ],
+  "pedidos": []
+}
